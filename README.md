@@ -1,10 +1,10 @@
 # cara_coroa
 
-A new Flutter project.
+A coin toss game.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Simple coin toss game using cross-screen navigation concepts.
 
 A few resources to get you started if this is your first Flutter project:
 
