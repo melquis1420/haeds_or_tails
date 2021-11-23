@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './resultado.dart';
+import 'dart:math';
 
 class Jogar extends StatefulWidget {
   @override
@@ -6,7 +8,19 @@ class Jogar extends StatefulWidget {
 }
 
 class _JogarState extends State<Jogar> {
-  void _exibirResultado() {}
+  //take a random item
+  void _exibirResultado() {
+    var itens = ["cara", "coroa"];
+    var numero = Random().nextInt(itens.length);
+    var resultado = itens[numero];
+
+    //Return resultado to next page
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Resultado(resultado)),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
